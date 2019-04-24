@@ -5,5 +5,8 @@
   "main": "index.js",
   "repository": "git@github.com:sliptype/cycle-react-pragma.git",
   "author": "sliptype <sliptype@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^16.8.6"
+  }
 }
