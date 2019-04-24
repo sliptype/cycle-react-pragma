@@ -1,0 +1,9 @@
+{
+  "name": "cycle-react-pragma",
+  "version": "0.0.0",
+  "description": "A JSX pragma for @cycle/react",
+  "main": "index.js",
+  "repository": "git@github.com:sliptype/cycle-react-pragma.git",
+  "author": "sliptype <sliptype@gmail.com>",
+  "license": "MIT"
+}
