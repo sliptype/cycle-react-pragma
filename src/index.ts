@@ -10,7 +10,12 @@ function createIncorporatedElement<P = any>(
     props: P & PropsExtensions | null,
     ...children: Array<string | ReactElement<any>>
 ): ReactElement<P> {
-    return createElement(type, props, ...children);
+    if (!props || !props.sel) {
+        return createElement(type, props, ...children);
+    } else {
+        delete props.sel;
+        return createElement(incorporate(type), props, ...children);
+    }
 }
 
 export default createIncorporatedElement;
