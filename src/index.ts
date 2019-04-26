@@ -13,7 +13,6 @@ function createIncorporatedElement<P = any>(
     if (!props || !props.sel) {
         return createElement(type, props, ...children);
     } else {
-        delete props.sel;
         return createElement(incorporate(type), props, ...children);
     }
 }
