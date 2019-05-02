@@ -1,9 +1,9 @@
 import { createElement, ReactElement, ReactType } from 'react';
 import { incorporate } from '@cycle/react';
 
-export type PropsExtensions = {
+type PropsExtensions = {
     sel?: string | symbol;
-};
+}
 
 function createIncorporatedElement<P = any>(
     type: ReactType<P>,
@@ -17,4 +17,6 @@ function createIncorporatedElement<P = any>(
     }
 }
 
-export default createIncorporatedElement;
+export default {
+    createElement: createIncorporatedElement
+}
