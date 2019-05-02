@@ -38,4 +38,19 @@ import CycleReactPragma from 'cycle-react-pragma';
 
 ### Babel
 
+
+### Usage
+
+```js
+function view(state$: Stream<State>): Stream<ReactElement> {
+    return state$.map(({ count }) => (
+        <div>
+            <h2>Counter: {count}</h2>
+            <button sel="add">Add</button>
+            <button sel="subtract">Subtract</button>
+        </div>
+    ));
+}
+```
+
 🚧
