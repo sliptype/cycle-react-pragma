@@ -38,8 +38,10 @@ import CycleReactPragma from 'cycle-react-pragma';
 
 ### Babel
 
+🚧
 
-### Usage
+
+## Usage
 
 ```js
 function view(state$: Stream<State>): Stream<ReactElement> {
@@ -52,5 +54,3 @@ function view(state$: Stream<State>): Stream<ReactElement> {
     ));
 }
 ```
-
-🚧
