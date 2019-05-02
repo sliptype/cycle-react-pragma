@@ -2,9 +2,9 @@
 # yarn lockfile v1
 
 
-"@cycle/react@git://github.com/sliptype/react.git":
-  version "2.0.0"
-  resolved "git://github.com/sliptype/react.git#33a7de985792ed58dbf1af072064b805e990e174"
+"@cycle/react@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@cycle/react/-/react-2.1.0.tgz#051fe0452898fa09eeb809d33aa0e5d9a7676c85"
   dependencies:
     "@cycle/run" "5.x.x"
     react "16.5.x"

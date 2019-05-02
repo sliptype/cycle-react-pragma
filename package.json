@@ -9,13 +9,13 @@
   "author": "sliptype <sliptype@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "@cycle/react": "file:.yalc/@cycle/react",
+    "@cycle/react": "^2.1.0",
     "@types/react": "^16.4.0",
     "react": "^16.8.6",
     "typescript": "3.1.3"
   },
   "peerDependencies": {
-    "@cycle/react": "latest",
+    "@cycle/react": "^2.1.0",
     "@types/react": "^16.4.0",
     "react": "^16.8.6"
   },
