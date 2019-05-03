@@ -30,12 +30,6 @@ Add the following to your `tsconfig.json`:
 }
 ```
 
-Import `cycle-react-pragma` in the modules using jsx:
-
-```js
-import CycleReactPragma from 'cycle-react-pragma';
-```
-
 ### Babel
 
 🚧
@@ -44,6 +38,8 @@ import CycleReactPragma from 'cycle-react-pragma';
 ## Usage
 
 ```js
+import CycleReactPragma from 'cycle-react-pragma';
+
 function view(state$: Stream<State>): Stream<ReactElement> {
     return state$.map(({ count }) => (
         <div>
