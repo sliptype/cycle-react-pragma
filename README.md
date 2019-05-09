@@ -32,8 +32,15 @@ Add the following to your `tsconfig.json`:
 
 ### Babel
 
-🚧
+Add the following to your webpack config:
 
+```js
+  plugins: [
+    ['transform-react-jsx', { pragma: 'CycleReactPragma.createElement' }],
+  ],
+```
+
+If you used `create-cycle-app` you will have to eject to modify the config.
 
 ## Usage
 
@@ -50,3 +57,13 @@ function view(state$: Stream<State>): Stream<ReactElement> {
     ));
 }
 ```
+
+## Notes
+
+Please ensure you are depending on compatible versions of `@cycle/react` and `@cycle/react-dom`. They should both be at least version `2.1.x`.
+
+```
+yarn list @cycle/react
+```
+
+should return a single result.
