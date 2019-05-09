@@ -15,6 +15,40 @@ This pragma allows you to use React-style JSX when rendering React components in
 yarn add cycle-react-pragma
 ```
 
+### Babel
+
+Add the following to your webpack config:
+
+```js
+module: {
+  rules: [
+    {
+      test: /\.jsx?$/,
+      loader: 'babel-loader',
+      options: {
+        plugins: [
+          ['transform-react-jsx', { pragma: 'CycleReactPragma.createElement' }],
+        ]
+      }
+    }
+  ]
+},
+```
+
+If you used `create-cycle-app` you may have to eject to modify the config.
+
+### Automatically providing CycleReactPragma
+
+You can avoid having to import `cycle-react-pragma` in every jsx file by allowing webpack to provide it:
+
+```js
+plugins: [
+  new webpack.ProvidePlugin({
+    CycleReactPragma: ['cycle-react-pragma', 'default']
+  })
+],
+```
+
 ### Typescript
 
 Add the following to your `tsconfig.json`:
@@ -30,23 +64,16 @@ Add the following to your `tsconfig.json`:
 }
 ```
 
-### Babel
-
-Add the following to your webpack config:
+If webpack is providing `CycleReactPragma` you will need to add typings to `custom-typings.d.ts`:
 
 ```js
-  plugins: [
-    ['transform-react-jsx', { pragma: 'CycleReactPragma.createElement' }],
-  ],
+declare var CycleReactPragma: any;
 ```
 
-If you used `create-cycle-app` you will have to eject to modify the config.
 
 ## Usage
 
 ```js
-import CycleReactPragma from 'cycle-react-pragma';
-
 function view(state$: Stream<State>): Stream<ReactElement> {
     return state$.map(({ count }) => (
         <div>
