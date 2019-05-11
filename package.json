@@ -15,7 +15,17 @@
   "license": "MIT",
   "devDependencies": {
     "@cycle/react": "^2.1.0",
+    "@cycle/react-dom": "^2.1.0",
+    "@types/mocha": "^5.2.6",
+    "@types/node": "^12.0.0",
     "@types/react": "^16.4.0",
+    "karma": "^4.1.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-cli": "^2.0.0",
+    "karma-mocha": "^1.3.0",
+    "karma-typescript": "^4.0.0",
+    "karma-typescript-es6-transform": "^4.0.0",
+    "mocha": "^6.1.4",
     "react": "^16.8.6",
     "typescript": "3.1.3"
   },
@@ -26,9 +36,8 @@
   },
   "scripts": {
     "prepublishOnly": "npm run compile",
-    "compile": "npm run compile-cjs && npm run compile-es6",
+    "compile": "npm run compile-cjs",
     "compile-cjs": "tsc --module commonjs --outDir ./lib/cjs",
-    "compile-es6": "echo 'TODO' : tsc --module es6 --outDir ./lib/es6",
-    "test": "$(npm bin)/mocha test/*.ts --require ts-node/register --recursive"
+    "test": "karma start karma.config.js"
   }
 }
