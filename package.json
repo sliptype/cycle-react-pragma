@@ -6,6 +6,11 @@
   "typings": "lib/cjs/index.d.ts",
   "types": "lib/cjs/index.d.ts",
   "repository": "git@github.com:sliptype/cycle-react-pragma.git",
+  "keywords": [
+    "cyclejs",
+    "react",
+    "jsx"
+  ],
   "author": "sliptype <sliptype@gmail.com>",
   "license": "MIT",
   "devDependencies": {
