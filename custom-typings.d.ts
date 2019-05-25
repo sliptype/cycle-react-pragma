@@ -1,5 +1,3 @@
-// This needs to work in the parent module
-
 import { Attributes } from 'react';
 
 declare global {
