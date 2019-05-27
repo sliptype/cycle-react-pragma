@@ -14,8 +14,5 @@
     "skipLibCheck": true,
     "lib": ["dom", "es5", "scripthost", "es2015"]
   },
-  "files": [
-    "src/index.ts",
-    "custom-typings.d.ts"
-  ]
+  "files": ["src/jsx-factory.ts"]
 }

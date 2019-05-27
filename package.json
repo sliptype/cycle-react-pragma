@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "description": "A JSX pragma for @cycle/react",
   "main": "lib/cjs/index.js",
-  "typings": "lib/cjs/index.d.ts",
-  "types": "lib/cjs/index.d.ts",
+  "typings": "lib/cjs/jsx-factory.d.ts",
+  "types": "lib/cjs/jsx-factory.d.ts",
   "repository": "git@github.com:sliptype/cycle-react-pragma.git",
   "keywords": [
     "cyclejs",

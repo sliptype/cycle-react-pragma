@@ -5,7 +5,7 @@ import {makeDOMDriver} from '@cycle/react-dom';
 import {run} from '@cycle/run';
 import xs  from 'xstream';
 
-import CycleReactPragma from '../src/index';
+import CycleReactPragma from '../src/jsx-factory';
 
 function createRenderTarget(id: string | null = null) {
   const element = document.createElement('div');
