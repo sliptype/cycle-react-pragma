@@ -16,21 +16,21 @@ declare global {
 }
 
 type PropsExtensions = {
-    sel?: string | symbol;
+  sel?: string | symbol;
 }
 
 function createIncorporatedElement<P = any>(
-    type: ReactType<P>,
-    props: P & PropsExtensions | null,
-    ...children: Array<string | ReactElement<any>>
+  type: ReactType<P>,
+  props: P & PropsExtensions | null,
+  ...children: Array<string | ReactElement<any>>
 ): ReactElement<P> {
-    if (!props || !props.sel) {
-        return createElement(type, props, ...children);
-    } else {
-        return createElement(incorporate(type), props, ...children);
-    }
+  if (!props || !props.sel) {
+    return createElement(type, props, ...children);
+  } else {
+    return createElement(incorporate(type), props, ...children);
+  }
 }
 
 export default {
-    createElement: createIncorporatedElement
+  createElement: createIncorporatedElement
 }
