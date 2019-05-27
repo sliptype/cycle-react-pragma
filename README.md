@@ -57,10 +57,8 @@ Add the following to your `tsconfig.json`:
 {
   "compilerOptions": {
     "jsx": "react",
-    "jsxFactory": "CycleReactPragma.createElement",
-  },
-  "files": ["node_modules/cycle-react-pragma/custom-typings.d.ts"],
-  "include": ["src/**/*"]
+    "jsxFactory": "CycleReactPragma.createElement"
+  }
 }
 ```
 
