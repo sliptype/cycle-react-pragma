@@ -2,7 +2,7 @@
   "name": "cycle-react-pragma",
   "version": "0.0.0",
   "description": "A JSX pragma for @cycle/react",
-  "main": "lib/cjs/index.js",
+  "main": "lib/cjs/jsx-factory.js",
   "typings": "lib/cjs/jsx-factory.d.ts",
   "types": "lib/cjs/jsx-factory.d.ts",
   "repository": "git@github.com:sliptype/cycle-react-pragma.git",
