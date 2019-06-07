@@ -1,3 +1,5 @@
+## ⚠ This is now part of [cyclejs/react-dom](https://github.com/cyclejs/react-dom)!
+
 # cycle-react-pragma
 A jsx pragma for @cycle/react
 
